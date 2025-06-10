@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Travel Nepal & Beyond</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Travel Nepal & Beyond</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="Gear & Tips.html">Gear & Tips</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out for trip inquiries, custom itineraries, or travel advice.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+        <p><i class="fas fa-phone"></i> +977-1-234-5678</p>
+        <p><i class="fas fa-envelope"></i> [email protected]</p>
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-twitter"></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-card">
+          <h2>Fill out the Form</h2>
+          <p>Submit the form and we will be back to you shortly</p>
+          <form>
+            <div class="form-group">
+              <div class="input-wrapper">
+                <label for="full-name"><i class="fas fa-user"></i> Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-wrapper">
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="input-wrapper">
+                <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                <select id="subject" required>
+                  <option value="" disabled selected>--Please choose an option--</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="booking">Booking Request</option>
+                  <option value="custom">Custom Itinerary</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-wrapper">
+                <label for="message"><i class="fas fa-comment"></i> Message</label>
+                <textarea id="message" placeholder="Your message" required></textarea>
+              </div>
+            </div>
+            <div class="form-group terms">
+              <label>
+                <input type="checkbox" required>
+                By submitting, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+              </label>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2>Join Our Adventure Community</h2>
+    <p>Subscribe for the latest gear reviews, travel tips, and exclusive adventure stories!</p>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Travel Nepal & Beyond</h3>
+        <p>Your guide to exploring Nepal and the world.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="Gear & Tips.html">Gear & Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Travel Nepal & Beyond. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn" class="btn scroll-to-top">↑ Back to Top</button>
+  <script>
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        scrollToTopBtn.style.opacity = '1';
+        scrollToTopBtn.style.visibility = 'visible';
+      } else {
+        scrollToTopBtn.style.opacity = '0';
+        scrollToTopBtn.style.visibility = 'hidden';
+      }
+    });
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
